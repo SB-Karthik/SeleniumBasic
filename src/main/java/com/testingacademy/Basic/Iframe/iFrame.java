@@ -1,4 +1,4 @@
-package com.testingacademy.Basic;
+package com.testingacademy.Basic.Iframe;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;

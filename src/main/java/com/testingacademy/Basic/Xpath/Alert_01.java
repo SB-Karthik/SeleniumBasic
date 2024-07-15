@@ -1,4 +1,4 @@
-package com.testingacademy.Xpath;
+package com.testingacademy.Basic.Xpath;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

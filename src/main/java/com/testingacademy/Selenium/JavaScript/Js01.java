@@ -1,4 +1,4 @@
-package com.testingacademy.Basic.Selenium.JavaScript;
+package com.testingacademy.Selenium.JavaScript;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

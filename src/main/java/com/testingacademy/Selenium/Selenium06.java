@@ -1,4 +1,4 @@
-package com.testingacademy.Basic.Selenium;
+package com.testingacademy.Selenium;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;

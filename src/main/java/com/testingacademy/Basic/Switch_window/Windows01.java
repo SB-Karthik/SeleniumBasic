@@ -1,4 +1,4 @@
-package com.testingacademy.Basic;
+package com.testingacademy.Basic.Switch_window;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;

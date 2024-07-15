@@ -1,4 +1,4 @@
-package com.testingacademy.Basic.Selenium;
+package com.testingacademy.Selenium;
 
 import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.WebDriver;

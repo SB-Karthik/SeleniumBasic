@@ -1,4 +1,4 @@
-package com.testingacademy.Basic.Selenium.fileupload;
+package com.testingacademy.Selenium.fileupload;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

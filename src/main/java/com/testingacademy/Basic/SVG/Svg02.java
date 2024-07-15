@@ -1,24 +1,26 @@
 package com.testingacademy.Basic.SVG;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Svg01 {
-    public static void main(String[] args) {
+import java.util.List;
+
+public class Svg02 {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.flipkart.com/");
+        driver.get("https://www.amcharts.com/svg-maps/?map=india");
         driver.manage().window().maximize();
-        driver.findElement(By.cssSelector("input[placeholder='Search for Products, Brands and More']"))
-                 .sendKeys("AC");
-        WebElement searchElement = driver.findElement(By.xpath("//button[@title='Search for Products, Brands and More']//*[name()='svg']"));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(searchElement).click().perform();
-//        searchElement.click();
+//        driver.findElement(By.cssSelector("input[value='I agree']")).click();
 
-
+        List<WebElement> states = driver.findElements(By.xpath("//*[local-name()='svg']/*[name()='g'][7]/*[name()='g']/*[name()='g']/*[name()='path']"));
+        for (WebElement e : states){
+            System.out.println(e.getAttribute("aria-label"));
+            if (e.getAttribute("aria-label").trim().equals("Tripura")){
+                new Actions(driver).moveToElement(e).click().perform();
+            }
+        }
     }
 }

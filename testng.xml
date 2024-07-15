@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Selenium">
         <classes>
-            <class name="com.testingacademy.Basic.Selenium06">
+            <class name="com.testingacademy.Selenium.Selenium06">
                 <methods>
                     <include name="testInvalidLogin"/>
                     <include name="testValidLogin"/>
